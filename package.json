@@ -1,0 +1,53 @@
+{
+  "name": "mosaic",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "electron": "^1.7.5",
+    "isomorphic-fetch": "^2.2.1",
+    "prop-types": "^15.5.7-alpha.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.0.11",
+    "react-table": "^6.8.6",
+    "react-tabs": "^2.3.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^19.24.1",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1"
+  },
+  "homepage": "./",
+  "main": "src/start.js",
+  "scripts": {
+    "start": "nf start -p 3000",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "electron-start": "node src/start-react",
+    "react-start": "react-scripts start",
+    "pack": "build --dir",
+    "dist": "npm run build && build",
+    "postinstall": "install-app-deps"
+  },
+  "build": {
+    "appId": "com.electron.electron-with-create-react-app",
+    "win": {
+      "iconUrl": "https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-256.png"
+    },
+    "directories": {
+      "buildResources": "public"
+    }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

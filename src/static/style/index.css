@@ -1,0 +1,33 @@
+@font-face {
+  font-family: AvenirNext;
+  src: url(../fonts/AvenirNext-Regular-08.ttf) format('truetype');
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: AvenirNext;
+  src: url(../fonts/AvenirNext-Medium-06.ttf) format('truetype');
+  font-weight: 500;
+  font-display: block;
+}
+
+@font-face {
+  font-family: AvenirNext;
+  src: url(../fonts/AvenirNext-Bold-01.ttf) format('truetype');
+  font-weight: bold;
+  font-display: block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: AvenirNext, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
